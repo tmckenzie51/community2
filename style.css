@@ -1,0 +1,43 @@
+header{
+  display: flex;
+  background-image: url(https://thumbs.dreamstime.com/z/colorful-hand-prints-459064.jpg);
+  background-size: cover;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+header a{
+  color: black;
+  font-weight: bold;
+  background-color: lightblue;
+}
+
+header h1{
+  background-color: lightgrey;
+  font-family: Roboto Slab, serif;
+}
+
+header a{
+  dislay: block;
+}
+
+a{
+margin-top: 20px;
+padding: 10px 15px;
+border: 2px solid white;
+border-radius: 100px;
+cursor: pointer;
+}
+
+a:hover{
+  background-color:white;
+  color:black;
+}
+#flexContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
