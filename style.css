@@ -7,19 +7,19 @@ header{
   align-items: center;
 }
 
-header a{
-  color: black;
-  font-weight: bold;
-  background-color: lightblue;
+#label{
+  width: 500px;
+  margin-top: -60px;
+  background: white;
+  border-color: black;
+  border-radius: 10px;
+  
 }
 
-header h1{
-  background-color: lightgrey;
-  font-family: Roboto Slab, serif;
-}
-
-header a{
-  dislay: block;
+#label p{
+  font-size: 36px;
+  font-family: Roboto Slab, sans-serif;
+  text-align: center;
 }
 
 a{
