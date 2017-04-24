@@ -1,6 +1,6 @@
 header{
   display: flex;
-  background-image: url(https://thumbs.dreamstime.com/z/colorful-hand-prints-459064.jpg);
+  background-image: url("https://thumbs.dreamstime.com/z/colorful-hand-prints-459064.jpg");
   background-size: cover;
   height: 250px;
   justify-content: center;
