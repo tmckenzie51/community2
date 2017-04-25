@@ -12,21 +12,26 @@ section{
 }
 
 #label{
-  width: 500px;
+  width: 300px;
   margin-top: -60px;
   background: white;
   border:6px solid lightblue;
-  border-radius: 10px;
+  border-radius: 75px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-#label p{
+#name{
   font-size: 36px;
   font-family: Roboto Slab, sans-serif;
   text-align: center;
   border: black 10px;
+}
+
+#tagline{
+  font-size: 20px;
+  text-align: center;
 }
 
 #flexContainer{
