@@ -1,43 +1,47 @@
 header{
   display: flex;
-  background-image: url("https://thumbs.dreamstime.com/z/colorful-hand-prints-459064.jpg");
-  background-size: cover;
+  background-image: url("https://img.clipartfest.com/c933b803ed68a91baaab3e5adcff5fd5_duravant-corporate-social-tree-supporting-the-environment-clipart_1958-2210.png");
+  background-size: 300px;
   height: 250px;
   justify-content: center;
   align-items: center;
+}
+
+section{
+  background-color: khaki;
 }
 
 #label{
   width: 500px;
   margin-top: -60px;
   background: white;
-  border-color: black;
+  border:6px solid lightblue;
   border-radius: 10px;
-  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #label p{
   font-size: 36px;
   font-family: Roboto Slab, sans-serif;
   text-align: center;
+  border: black 10px;
 }
 
-a{
-margin-top: 20px;
-padding: 10px 15px;
-border: 2px solid white;
-border-radius: 100px;
-cursor: pointer;
-}
-
-a:hover{
-  background-color:white;
-  color:black;
-}
 #flexContainer{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   margin-top: 40px;
+  font-family: Roboto Slab, sans-serif;
+  width: 66.7%;
+}
+
+.typeform-widget{
+  width:66.7%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
