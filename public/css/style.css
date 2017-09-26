@@ -1,0 +1,385 @@
+.inactive{
+   display: none;
+ }
+
+ body { padding: 2em; }
+
+
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+}
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+body{
+    background-color: MintCream;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+  #create-community-screen h2{
+    text-align: center;
+  }
+
+    /*#create-community-screen .unity{
+    width:8vw;
+    border-radius:50%;
+  	background: LightSalmon;
+    height:15vh;
+    overflow-x: scroll;
+    width: auto;
+  }
+
+  #create-community-screen .bigCommunity p{
+    padding: 10px;
+  }
+
+  #create-community-screen .bigCommunity:hover, .suggestions:hover{
+    background: yellow;
+  }*/
+
+  .suggestions{
+    overflow-x: scroll;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    text-align: center;
+  	background: pink;
+    margin-bottom: 10px;
+    line-height: 50px;
+    margin-top: 0px;
+  }
+
+   .button{
+     background-color: grey;
+     position: absolute;
+     left:70vw;
+     top: 50vh;
+     font-family: 'Raleway', sans-serif;
+     font-size: 20px;
+     color: white;
+   }
+
+   .button:hover{
+     background-color: white;
+     color: black;
+   }
+
+  .concentricComm{
+    position: absolute;
+    left: 50vw;
+    line-height: 2px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    text-align: center;
+  	background: pink;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+
+  #doneButton{
+    top:90vh;
+    left:65vw;
+    position:absolute;
+  }
+
+  #startOverButton{
+    top: 50vh;
+    left: 0vw;
+    position: absolute;
+  }
+
+  .chip{
+    width: auto;
+    height: auto;
+  }
+
+  .commName{
+    position: relative;
+    top:-15px;
+  }
+
+  #bigCommID{
+    overflow: scroll;
+    height: 80px;
+    width: 100vw;
+  }
+
+  #bigCommInnerContainer{
+    width:800px;
+  }
+
+#chips{
+  overflow: scroll;
+  height: 32px;
+  width: 100vw;
+}
+
+#chipsInnerContainer{
+  width: 1000px;
+}
+
+.innerCommSuggestions{
+  overflow-x: scroll;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  text-align: center;
+  background: pink;
+  margin-bottom: 10px;
+  line-height: 50px;
+  margin-top: 0px;
+}
+
+.cardDisplay{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}
+
+
+/* -------Message Screen CSS -------*/
+
+
+/*html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}*/
+
+main, #messages-card {
+  height: 100%;
+  padding-bottom: 0;
+}
+#messages-card-container {
+  height: calc(100% - 150px);
+  padding-bottom: 0;
+}
+#messages-card {
+  margin-top: 15px;
+}
+#messageScreen .mdl-layout__header-row span {
+  margin-left: 15px;
+  margin-top: 17px;
+}
+#messageScreen .mdl-grid {
+  max-width: 1024px;
+  margin: auto;
+}
+#messageScreen .material-icons {
+  font-size: 36px;
+  top: 8px;
+  position: relative;
+}
+#messageScreen .mdl-layout__header-row {
+  padding: 0;
+  margin: 0 auto;
+}
+#messageScreen .mdl-card__supporting-text {
+  width: auto;
+  height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#messages {
+  overflow-y: auto;
+  margin-bottom: 10px;
+  height: calc(100% - 80px);
+}
+#message-filler {
+  flex-grow: 1;
+}
+#messageScreen .message-container:first-of-type {
+  border-top-width: 0;
+}
+#messageScreen .message-container {
+  display: block;
+  margin-top: 10px;
+  border-top: 1px solid #f3f3f3;
+  padding-top: 10px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+#messageScreen .message-container.visible {
+  opacity: 1;
+}
+#messageScreen .message-container .pic {
+  background-image: url('/images/profile_placeholder.png');
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  border-radius: 20px;
+}
+#messageScreen .message-container .spacing {
+  display: table-cell;
+  vertical-align: top;
+}
+#messageScreen .message-container .message {
+  display: table-cell;
+  width: calc(100% - 40px);
+  padding: 5px 0 5px 10px;
+}
+#messageScreen .message-container .name {
+  display: inline-block;
+  width: 100%;
+  padding-left: 40px;
+  color: #bbb;
+  font-style: italic;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+#message-form {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 48px);
+  float: left;
+}
+#image-form {
+  display: flex;
+  flex-direction: row;
+  width: 48px;
+  float: right;
+}
+#message-form .mdl-textfield {
+  width: calc(100% - 100px);
+}
+#message-form button, #image-form button {
+  width: 100px;
+  margin: 15px 0 0 10px;
+}
+#messageScreen .mdl-card {
+  min-height: 0;
+}
+#messageScreen .mdl-card {
+  background: linear-gradient(white, #f9f9f9);
+  justify-content: space-between;
+}
+#user-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 22px;
+  width: 100%;
+  right: 0;
+  padding-left: 10px;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+#user-container #user-pic {
+  top: -3px;
+  position: relative;
+  display: inline-block;
+  background-image: url('/images/profile_placeholder.png');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  border-radius: 20px;
+}
+#user-container #user-name {
+  font-size: 16px;
+  line-height: 36px;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+#image-form #submitImage {
+  width: auto;
+  padding: 0 6px 0 1px;
+  min-width: 0;
+}
+#image-form #submitImage .material-icons {
+  top: -1px;
+}
+#messageScreen .message img {
+  max-width: 300px;
+  max-height: 200px;
+}
+#mediaCapture {
+  display: none;
+}
+@media screen and (max-width: 610px) {
+  header {
+    height: 113px;
+    padding-bottom: 80px !important;
+  }
+ #user-container {
+    top: 72px;
+    background-color: rgb(3,155,229);
+    height: 38px;
+    padding-top: 3px;
+    padding-right: 2px;
+  }
+   #user-container #user-pic {
+    top: 2px;
+    width: 33px;
+    height: 33px;
+    background-size: 33px;
+  }
+}
+#messageScreen .mdl-textfield__label:after {
+  background-color: #0288D1;
+}
+#messageScreen .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
+  color: #0288D1;
+}
+#messageScreen .mdl-button .material-icons {
+  top: -1px;
+  margin-right: 5px;
+}
+
+#inbox {
+  overflow-y: auto;
+  margin-bottom: 10px;
+  height: calc(100% - 80px);
+}
+#inbox-filler {
+  flex-grow: 1;
+}
+
+#comingSoon{
+  width: 60vw;
+}
